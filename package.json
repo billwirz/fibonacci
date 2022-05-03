@@ -1,0 +1,28 @@
+{
+  "name": "fibonacci",
+  "version": "1.0.0",
+  "description": "prints fibonacci sequence to website",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billwirz/fibonacci.git"
+  },
+  "author": "Willy Andres Wirz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/billwirz/fibonacci/issues"
+  },
+  "homepage": "https://github.com/billwirz/fibonacci#readme",
+  "devDependencies": {
+    "jest": "^28.0.3",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

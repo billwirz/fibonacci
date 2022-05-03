@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <title>Fibonacci Sequence</title>
+    <script src="./fibonacci.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Fibonacci Sequence</h2>
+    </header>
+
+    <main>
+        <input type="text" id="numberValues" placeholder="n">
+        <input type="button" onclick="displayFibonacci()" value="OK">
+        <div class="result">
+            Result:<span id="fibSequence"></span>
+        </div>
+    </main>
+
+    <script>
+        function displayFibonacci() {
+            let numberValues = document.getElementById("numberValues").innerHTML;
+            console.log('numberValues', numberValues);
+            document.getElementById("fibSequence").innerHTML = createSequence(numberValues);
+        }
+    </script>
+
+</body>
