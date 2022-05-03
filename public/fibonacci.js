@@ -1,18 +1,17 @@
 function createSequence(length) {
-    if (typeof length !== Number)
+    lengthNumber = Number(length);
+    if (lengthNumber <= 0)
         return '';
 
     let sequence = [];
 
-    for (let n = 0; n < length; n++) {
+    for (let n = 0; n < lengthNumber; n++) {
         if (n < 2)
             sequence.push(n);
         else {
             sequence.push(sequence[n - 1] + sequence[n - 2]);
         }
     }
-
-    console.log('sequence', sequence);
 
     return sequence.toString();
 }

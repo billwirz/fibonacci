@@ -20,8 +20,7 @@
 
     <script>
         function displayFibonacci() {
-            let numberValues = document.getElementById("numberValues").innerHTML;
-            console.log('numberValues', numberValues);
+            let numberValues = document.getElementById("numberValues").value;
             document.getElementById("fibSequence").innerHTML = createSequence(numberValues);
         }
     </script>
