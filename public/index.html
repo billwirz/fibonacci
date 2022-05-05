@@ -27,7 +27,9 @@
 
         function displayFibonacci() {
             let numberValues = document.getElementById("numberValues").value;
-            document.getElementById("fibSequence").innerHTML = createSequence(numberValues);
+            let sequence = createSequence(numberValues);
+
+            document.getElementById("fibSequence").innerHTML = sequence ? sequence : "Please type a number between 1 and 1000";
         }
 
         window.displayFibonacci = displayFibonacci;
