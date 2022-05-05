@@ -1,4 +1,4 @@
-import createSequence from "../public/fibonacci.js";
+import createSequence from "../../public/fibonacci.js";
 
 describe('fibonacci sequence generator', () => {
     it('should print out empty string if n === undefined', () => {
