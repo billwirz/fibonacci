@@ -13,5 +13,5 @@ function createSequence(length) {
         }
     }
 
-    return sequence.toString();
+    return sequence.join(', ');
 }
