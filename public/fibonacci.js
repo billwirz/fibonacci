@@ -1,8 +1,11 @@
 export default function createSequence(length) {
-    const lengthNumber = Number(length);
+    let lengthNumber = Number(length);
 
     if (lengthNumber === NaN || lengthNumber <= 0)
         return '';
+
+    if (lengthNumber > 1000)
+        lengthNumber = 1000;
 
     const sequence = [];
 
