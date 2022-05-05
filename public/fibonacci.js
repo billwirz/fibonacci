@@ -1,11 +1,12 @@
-function createSequence(length) {
-    lengthNumber = Number(length);
-    if (lengthNumber <= 0)
+export default function createSequence(length) {
+    const lengthNumber = Number(length);
+
+    if (lengthNumber === NaN || lengthNumber <= 0)
         return '';
 
-    let sequence = [];
+    const sequence = [];
 
-    for (let n = 0; n < lengthNumber; n++) {
+    for (let n = 0; n < Math.floor(lengthNumber); n++) {
         if (n < 2)
             sequence.push(n);
         else {

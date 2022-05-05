@@ -3,7 +3,6 @@
 <head lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fibonacci Sequence</title>
-    <script src="./fibonacci.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
@@ -23,10 +22,14 @@
         </form>
     </div>
 
-    <script>
+    <script type="module">
+        import createSequence from "./fibonacci.js";
+
         function displayFibonacci() {
             let numberValues = document.getElementById("numberValues").value;
             document.getElementById("fibSequence").innerHTML = createSequence(numberValues);
         }
+
+        window.displayFibonacci = displayFibonacci;
     </script>
 </body>
