@@ -17,7 +17,7 @@
                 <input type="button" onclick="displayFibonacci()" value="Display" class="btn btn-outline-primary">
             </div>
             <div class="mb-3">
-                Result: <span id="fibSequence"></span>
+                <span id="fibSequence"></span>
             </div>
         </form>
     </div>
@@ -29,7 +29,7 @@
             let numberValues = document.getElementById("numberValues").value;
             let sequence = createSequence(numberValues);
 
-            document.getElementById("fibSequence").innerHTML = sequence ? sequence : "Please type a number between 1 and 1000";
+            document.getElementById("fibSequence").innerHTML = sequence ? sequence : "Please type a number between 1 and 1000.";
         }
 
         window.displayFibonacci = displayFibonacci;
